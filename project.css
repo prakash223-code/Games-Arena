@@ -1,0 +1,360 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Goldman", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: default;
+    color: #ECF0F1;
+    letter-spacing: 0.7px;
+}
+
+
+body {
+    background-color: #0D0D0D !important;
+    font-family: "Goldman", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: default;
+    color: #ECF0F1;
+}
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.nav1 {
+    background-color: rgba(255, 0, 0, 0.49);
+    padding: 7px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+
+.nav1 a {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+.nav-search {
+    margin-left: 340px;
+    position: static;
+}
+
+.nav-search input {
+    display: flex;
+    width: 680px;
+    height: 35px;
+    margin-top: 6px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 10px;
+    cursor: text;
+}
+
+.nav2 {
+    background-color: #0D0D0D;
+}
+
+.nav2 div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-search img {
+    position: absolute;
+    top: 20px;
+    right: 220px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.nav-right {
+    padding-top: 7px;
+    display: flex;
+}
+
+.nav-right .cart {
+    display: flex;
+    margin-top: 6px;
+
+}
+.cart:hover{
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    width: 153px;
+    height: 35px;
+    border-radius: 4px;
+    margin-left: 14px;
+    transition: 0.3s ease;
+    padding-top: 5px;
+}
+
+.login:hover {
+    background-color: red;
+    transition: 0.3s ease;
+}
+
+
+.nav2 img {
+    margin-left: -37px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    transition: 0.2s ease;
+}
+
+.dropdown:hover {
+    color: red;
+    transition: 0.2s ease;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s ease;
+    padding: 14px;
+}
+
+button {
+    background-color: #ec0b0b;
+    padding: 14px;
+    border: none;
+}
+
+.dropdown-content {
+    margin-top: 47px;
+    display: none;
+    position: absolute;
+    background-color: #0D0D0D;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 4;
+    left: 9px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #8d848486;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropdown-btn {
+    transition: 0.2s all ease;
+    color: red;
+}
+.dropdown::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    height: 3px;
+    top: 80%;
+    width: 0;
+    left: 0;
+    margin-left: 7px;
+    transition: 0.2s ease;
+    border: none;
+    border-radius: 10px;
+}
+.dropdown:hover::after{
+    width: 90%;
+}
+
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.games {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+.text-danger{
+    margin-left: 176px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+}
+.game-list-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 50px;
+    justify-content: center;
+}
+.game-list-2-btn{
+    background-color: darkred;
+    border-radius: 2px;
+    transition: 0.2s ease;
+}
+.game-list-2-btn:hover{
+    background-color: red;
+}
+.game-1{
+    width: 350px;
+    padding: 8px;
+    transition: 0.2s ease;
+}
+.game-1:hover{
+    background-color: #2e2c2c52;
+}
+.game-1-title p{
+    opacity: 0.4;
+}
+.game-1 h3{
+    font-weight: 800;
+}
+.game-1-title{
+    padding-top: 8px;
+}
+.game-list img {
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    justify-items: space-evenly;
+    object-fit: cover;
+}
+
+.images {
+    background-color:transparent;
+    height: 420px;
+    text-align: center;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    width: 200px;
+}
+
+.images p {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.images del {
+    opacity: 0.5;
+}
+
+.rate {
+    justify-content: center;
+    margin: 0px;
+}
+
+.images:hover {
+    transform: scale(0.97);
+    box-shadow: 0px 0px 12px red;
+}
+
+
+.footer {
+    color: red;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    margin-top: 30px;
+    gap: 200px;
+    height: 240px;
+}
+
+.footer a {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-logo {
+    display: flex;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.footer-logo h2 {
+    font-size: 25px;
+}
+
+.footer img {
+    margin-top: 15px;
+}
+
+.footer li {
+    list-style: none;
+    transition: 0.1s ease;
+}
+
+.list-head {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.list-head :hover {
+    cursor: default;
+}
+
+.footer li:hover {
+    color: #3c5e67;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 140px;
+    position: absolute;
+
+}

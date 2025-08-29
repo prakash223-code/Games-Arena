@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Goldman", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    background-color: #0D0D0D !important;
+}
+
+.nav1 {
+    background-color: rgba(255, 0, 0, 0.49);
+    padding: 7px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+
+.nav1 a {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 1px;
+    color: white;
+}
+
+.nav-search {
+    margin-left: 520px;
+}
+
+.nav-search input {
+    display: flex;
+    width: 680px;
+    height: 35px;
+    margin-top: 6px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.nav2 {
+    background-color: #0D0D0D;
+}
+
+.nav2 div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-search img {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.nav-right {
+    padding-top: 7px;
+    display: flex;
+}
+
+.nav-right .cart {
+    display: flex;
+    margin-top: 6px;
+
+}
+
+.cart:hover {
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    width: 153px;
+    height: 35px;
+    border-radius: 4px;
+    margin-left: 14px;
+    transition: 0.3s ease;
+    padding-top: 5px;
+}
+
+.login:hover {
+    background-color: red;
+    transition: 0.3s ease;
+}
+
+
+.nav2 img {
+    margin-left: -37px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.dropdown:hover {
+    color: rgb(167, 150, 150);
+    transition: 0.2s ease;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    transition: 0.2s ease;
+    padding: 14px;
+}
+
+button {
+    background-color: #ec0b0b;
+    padding: 14px;
+    border: none;
+}
+
+.dropdown-content {
+    margin-top: 47px;
+    display: none;
+    position: absolute;
+    background-color: #0D0D0D;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 4;
+    left: 9px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #8d848486;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropdown-btn {
+    color: rgb(167, 150, 150);
+    transition: 0.2s all ease;
+}
+.dropdown::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    height: 3px;
+    top: 80%;
+    width: 0;
+    left: 0;
+    margin-left: 7px;
+    transition: 0.2s ease;
+    border: none;
+    border-radius: 10px;
+}
+.dropdown:hover::after{
+    width: 90%;
+}
+
+form {
+    display: flex;
+    background-color: #242323a0;
+    color: white;
+    border-radius: 5px;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 0px 20px red;
+    margin-left: 420px;
+    margin-top: 50px;
+    gap: 30px;
+
+}
+
+input {
+    display: block;
+    border: none;
+    background-color: #242323a0;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.input{
+    width: 330px;
+    padding-left: 10px;
+}
+.check {
+    display: flex !important;
+    flex-direction: row;
+    margin-top: -30px;
+    margin-left: 20px;
+
+}
+
+.check p {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.submit {
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    transition: 0.3s ease;
+    width: 280px;
+    margin-left: 29px;
+}
+
+.submit:hover {
+    background-color: rgba(255, 0, 0, 0.467);
+
+}
+
+.name-login {
+    margin: 20px
+}
+
+.form-right {
+    width: 1000px;
+    margin: 0;
+    height: 100%;
+}
+.form-left{
+    margin-top: 60px;
+    width: 400px;
+    padding-left: 10px;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.register{
+    font-size: 14px;
+    text-align: center;
+    padding-left: 5px;
+    padding-top: 20px;
+}
