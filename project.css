@@ -181,15 +181,16 @@ button {
 }
 
 .text-danger {
-    margin-left: 176px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-size: 26px;
+    position: relative;
+    margin-left: 12%;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 .game-list {
     display: flex;
     flex-wrap: wrap;
+    flex-grow:2;
     gap: 40px;
     margin: 100px;
     margin-top: 0;
@@ -344,25 +345,37 @@ button {
         height: 2rem;
         border-radius: 3px;
     }
-    .signup{
-        height: 2rem !important;
-        font-size: 20px !important;
+
+    #signup {
+        height: 2rem;
+        font-size: 13px;
     }
+
     .nav2 {
         height: 4vh;
+        padding: 1px;
     }
 
     .nav2 div {
-        gap: 0%;
+        gap: 0;
     }
 
     .dropdown,
     .dropdown-btn {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .carousel-item img {
         height: 30vh;
+    }
+
+    .text-danger {
+        position: relative;
+        display: flex;
+        left: 0;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 30px;
     }
 }
 
@@ -371,17 +384,31 @@ button {
     #search-input {
         width: 100%;
     }
+
+    .nav2 {
+        height: fit-content;
+    }
+
     .nav2 div {
         gap: 4%;
     }
+
     .dropdown,
     .dropdown-btn {
-        font-size: 13px;
+        font-size: 14px;
     }
+
     .carousel-item img {
         height: 30vh;
     }
-    
+
+    .text-danger {
+        position: relative;
+        left: 0%;
+        margin-left: 15%;
+        padding: 10px;
+        margin-top: 30px;
+    }
 }
 
 /* laptop */
