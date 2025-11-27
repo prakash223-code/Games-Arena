@@ -26,7 +26,7 @@ a {
 }
 
 #search-input {
-    width: 80vh;
+    width: 50vw;
 }
 
 #search-input:hover {
@@ -35,6 +35,7 @@ a {
 
 .d-flex {
     gap: 10px;
+    justify-content: center;
 }
 
 #signup {
@@ -190,7 +191,7 @@ button {
 .game-list {
     display: flex;
     flex-wrap: wrap;
-    flex-grow:2;
+    flex-grow: 2;
     gap: 40px;
     margin: 100px;
     margin-top: 0;
@@ -271,73 +272,54 @@ button {
     justify-content: center;
     margin: 0px;
 }
-
 .images:hover {
     transform: scale(0.97);
     box-shadow: 0px 0px 12px red;
+    cursor: pointer;
 }
-
 
 .footer {
-    color: red;
     background-color: black;
     width: 100%;
-    display: flex;
-    padding-top: 30px;
-    margin-top: 30px;
-    gap: 200px;
-    height: 240px;
+    display: block;
+    padding: 2%;
 }
 
-.footer a {
-    display: flex;
-    text-decoration: none;
-    cursor: pointer;
+li {
+    list-style-type: none;
 }
 
 .footer-logo {
     display: flex;
-    padding: 30px;
-    padding-top: 40px;
 }
 
-.footer-logo h2 {
-    font-size: 25px;
+.footer-logo img {
+    display: flex;
+    margin-top: 20px;
 }
 
-.footer img {
-    margin-top: 15px;
+.footer-middle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
-
-.footer li {
-    list-style: none;
-    transition: 0.1s ease;
+.footer-middle li{
+    opacity: 0.7;
 }
-
-.list-head {
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.list-head :hover {
-    cursor: default;
-}
-
-.footer li:hover {
-    color: #3c5e67;
-    cursor: pointer;
-}
-
 .footer-bottom {
-    margin-top: 140px;
-    position: absolute;
-
+    display: flex;
 }
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .navbar-brand {
         font-size: 20px !important;
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: center;
     }
 
     #search-input {
@@ -364,7 +346,10 @@ button {
     .dropdown-btn {
         font-size: 8px;
     }
-
+    .form{
+        height: 20vh;
+        width: 20vw;
+    }
     .carousel-item img {
         height: 30vh;
     }
@@ -373,29 +358,38 @@ button {
         position: relative;
         display: flex;
         left: 0;
-        justify-content: center;
-        padding: 10px;
-        margin-top: 30px;
+        font-size: 19px;
+    }
+
+    .footer-middle{
+        display: block;
+    }
     }
 }
+
+
+
 
 /* tablet */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     #search-input {
-        width: 100%;
+        width: 100% !important;
+        flex-grow: 1;
     }
 
     .nav2 {
         height: fit-content;
+        display: flex;
+        width: 100%;
     }
 
     .nav2 div {
-        gap: 4%;
+        gap: 1%;
     }
 
     .dropdown,
     .dropdown-btn {
-        font-size: 14px;
+        font-size: 1px;
     }
 
     .carousel-item img {
@@ -409,11 +403,24 @@ button {
         padding: 10px;
         margin-top: 30px;
     }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0%;
+        margin: 0;
+    }
+
+    .footer-middle li {
+        padding: 0;
+        width: 0;
+        margin: 0;
+    }
 }
 
 /* laptop */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+/* @media screen and (min-width: 1025px) and (max-width: 1280px) {
     #search-input {
         width: 60vh;
     }
-}
+} */
